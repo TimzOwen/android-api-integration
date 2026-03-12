@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import com.timzowen.apiintegrationcourse.themovieapi.navigation.MovieAppNavigation
 import com.timzowen.apiintegrationcourse.themoviedb.navigation.MovieNavGraph
 import com.timzowen.apiintegrationcourse.ui.postapi.navigation.AppNavGraph
 import com.timzowen.apiintegrationcourse.ui.postapiI.navigation.AppMainNav
@@ -18,6 +19,7 @@ class MainActivity : ComponentActivity() {
 //                AppNavGraph()
 //                AppMainNav()
                 MovieNavGraph()
+//                MovieAppNavigation()
             }
         }
     }

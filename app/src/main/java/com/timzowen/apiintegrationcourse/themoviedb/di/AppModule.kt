@@ -12,6 +12,6 @@ import org.koin.dsl.module
 val appModule = module {
     single { HttpClientFactory.create() }
     single { MovieApi(get()) }
-    single<MovieRepository> { MovieRepositoryImpl(get()) }
     viewModel { MovieViewModel(get()) }
+    single<MovieRepository> { MovieRepositoryImpl(get()) }
 }
